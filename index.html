@@ -36,10 +36,18 @@ header {
 }
 
 .logo {
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    width: 220px;
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 60px;
+    object-fit: contain;
+
 }
 
 nav a {
@@ -233,7 +241,13 @@ footer a {
     nav {
         display: none;
     }
+.logo {
+    width: 170px;
+}
 
+.logo img {
+    max-height: 50px;
+}
     .hero {
         min-height: auto;
         display: flex;
@@ -284,8 +298,8 @@ footer a {
 <header>
 
     <div class="logo">
-        SB WERKZEUGTECHNIK
-    </div>
+    <img src="Logo.png" alt="SB Werkzeugtechnik">
+</div>
 
     <nav>
         <a href="#leistungen">Leistungen</a>
