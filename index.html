@@ -4,29 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SB Werkzeugtechnik – Kompetent. Schnell. Zuverlässig.</title>
+<title>SB Werkzeugtechnik</title>
 
-<meta name="description" content="SB Werkzeugtechnik – technische Beratung, Anwendungstechnik und Werkzeuglösungen für das Holzhandwerk.">
+<meta name="description" content="SB Werkzeugtechnik – technische Werkzeugberatung, Anwendungstechnik und Werkzeuglösungen für das Holzhandwerk.">
 
 <style>
-    .hero-image {
-    width: 42%;
-    margin-right: 6%;
-}
 
-.hero-image img {
-    width: auto;
-    height: auto;
-    display: block;
-}
-
-@media (max-width: 750px) {
-    .hero-image {
-        width: auto;
-        margin-right: 0;
-        margin-bottom: 35px;
-    }
-}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -35,183 +18,280 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-    color: #171717;
-    background: #f7f6f3;
+    color: #151515;
+    background: #f5f4f1;
     line-height: 1.6;
 }
 
 header {
-    background: #111;
-    color: white;
-    padding: 22px 6%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 6%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 
 .logo {
-    font-size: 24px;
+    color: white;
+    font-size: 20px;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin-left: 25px;
+    margin-left: 30px;
     font-size: 15px;
 }
 
 .hero {
-    min-height: 75vh;
+    min-height: 100vh;
+    background: #171717;
+    color: white;
     display: flex;
     align-items: center;
-    padding: 80px 8%;
-    background: #e9e6df;
+    padding: 120px 7%;
+    gap: 7%;
+}
+
+.hero-image {
+    width: 48%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    display: block;
 }
 
 .hero-content {
-    max-width: 850px;
+    width: 45%;
+}
+
+.kicker {
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    opacity: 0.65;
 }
 
 .hero h1 {
-    font-size: clamp(48px, 8vw, 90px);
+    font-size: clamp(50px, 6vw, 86px);
     line-height: 0.95;
-    margin-bottom: 30px;
-    letter-spacing: -3px;
+    letter-spacing: -4px;
+    margin-bottom: 35px;
 }
 
-.hero p {
-    font-size: 22px;
-    max-width: 650px;
-    margin-bottom: 35px;
+.hero h1 span {
+    display: block;
+}
+
+.hero-text {
+    font-size: 20px;
+    max-width: 550px;
+    color: #d0d0d0;
+    margin-bottom: 40px;
 }
 
 .button {
     display: inline-block;
-    background: #111;
-    color: white;
     padding: 14px 28px;
+    background: white;
+    color: #111;
     text-decoration: none;
-    border-radius: 3px;
     font-weight: 600;
 }
 
 section {
-    padding: 90px 8%;
+    padding: 100px 7%;
+}
+
+.section-label {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #777;
+    margin-bottom: 15px;
 }
 
 .section-title {
-    font-size: 42px;
-    margin-bottom: 20px;
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
 }
 
 .intro {
     max-width: 750px;
     font-size: 20px;
+    color: #555;
 }
 
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    margin-top: 45px;
+    margin-top: 60px;
 }
 
 .card {
     background: white;
-    padding: 35px;
-    border: 1px solid #ddd;
+    padding: 40px;
+    min-height: 230px;
+}
+
+.card-number {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 35px;
 }
 
 .card h3 {
-    font-size: 22px;
-    margin-bottom: 12px;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #666;
 }
 
 .about {
+    background: #dedbd4;
+}
+
+.about-content {
+    max-width: 850px;
+}
+
+.about-text {
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.contact {
     background: #171717;
     color: white;
 }
 
-.about-content {
-    max-width: 800px;
+.contact .intro {
+    color: #ccc;
 }
 
-.contact {
-    background: #e9e6df;
+.contact .button {
+    margin-top: 35px;
 }
 
 footer {
     background: #111;
-    color: #aaa;
-    padding: 30px 8%;
+    color: #777;
+    padding: 30px 7%;
     font-size: 14px;
 }
 
-@media (max-width: 750px) {
+footer a {
+    color: #999;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+
     header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
+        position: absolute;
+        padding: 20px 6%;
     }
 
-    nav a {
-        margin-left: 0;
-        margin-right: 18px;
+    nav {
+        display: none;
     }
 
     .hero {
-        min-height: 70vh;
-        padding: 60px 7%;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 100px 6% 70px;
+        gap: 40px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        height: 60vh;
+    }
+
+    .hero-content {
+        width: 100%;
     }
 
     .hero h1 {
-        font-size: 52px;
-    }
-
-    .hero p {
-        font-size: 19px;
+        font-size: 58px;
+        letter-spacing: -3px;
     }
 
     section {
-        padding: 65px 7%;
+        padding: 70px 6%;
     }
 
     .cards {
         grid-template-columns: 1fr;
     }
+
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <div class="logo">SB WERKZEUGTECHNIK</div>
+
+    <div class="logo">
+        SB WERKZEUGTECHNIK
+    </div>
 
     <nav>
         <a href="#leistungen">Leistungen</a>
         <a href="#ueber-mich">Über mich</a>
         <a href="#kontakt">Kontakt</a>
     </nav>
+
 </header>
 
+
 <section class="hero">
+
     <div class="hero-image">
-    <img src="IMG_1055.jpeg" alt="SB Werkzeugtechnik – Werkzeugberatung">
-</div>
+
+        <img src="IMG_1055.jpeg"
+             alt="SB Werkzeugtechnik">
+
+    </div>
+
+
     <div class="hero-content">
 
+        <div class="kicker">
+            Werkzeugtechnik · Beratung · Anwendung
+        </div>
+
         <h1>
-            Kompetent.<br>
-            Schnell.<br>
-            Zuverlässig.
+            <span>Kompetent.</span>
+            <span>Schnell.</span>
+            <span>Zuverlässig.</span>
         </h1>
 
-        <p>
-            Werkzeugtechnik mit Erfahrung aus dem Handwerk –
-            persönlich, praxisnah und lösungsorientiert.
+        <p class="hero-text">
+            Werkzeugtechnik mit Erfahrung aus dem Handwerk.
+            Persönliche Beratung, praxisnahe Lösungen und
+            technische Kompetenz.
         </p>
 
         <a class="button" href="#kontakt">
@@ -219,71 +299,116 @@ footer {
         </a>
 
     </div>
+
 </section>
+
 
 <section id="leistungen">
 
-    <h2 class="section-title">Was ich für Sie mache</h2>
+    <div class="section-label">
+        Was ich anbiete
+    </div>
+
+    <h2 class="section-title">
+        Lösungen, die in der Praxis funktionieren.
+    </h2>
 
     <p class="intro">
-        Von der Auswahl des richtigen Werkzeugs bis zur praktischen
-        Anwendung vor Ort – ich unterstütze Sie mit technischem
-        Know-how und Erfahrung aus dem Holzhandwerk.
+        Von der Auswahl des richtigen Werkzeugs bis zur
+        praktischen Anwendung vor Ort – ich unterstütze
+        meine Kunden mit Erfahrung, technischem Know-how
+        und persönlicher Beratung.
     </p>
+
 
     <div class="cards">
 
         <div class="card">
-            <h3>Technische Beratung</h3>
+
+            <div class="card-number">
+                01
+            </div>
+
+            <h3>
+                Technische Beratung
+            </h3>
+
             <p>
-                Persönliche Beratung bei der Auswahl geeigneter
-                Werkzeuge und Lösungen für Ihre Anwendung.
+                Die passende Werkzeuglösung für Ihre
+                Anwendung – persönlich und praxisnah.
             </p>
+
         </div>
 
-        <div class="card">
-            <h3>Anwendungstechnik</h3>
-            <p>
-                Praxisnahe Lösungen, Produktvorführungen und
-                Unterstützung direkt bei Ihnen vor Ort.
-            </p>
-        </div>
 
         <div class="card">
-            <h3>Werkzeuglösungen</h3>
+
+            <div class="card-number">
+                02
+            </div>
+
+            <h3>
+                Anwendungstechnik
+            </h3>
+
             <p>
-                Die passende Lösung für Schreiner, Tischlereien,
-                Möbelbau, Fensterbau und weitere Anwendungen.
+                Produktvorführungen, Tests und Lösungen
+                direkt bei Ihnen vor Ort.
             </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-number">
+                03
+            </div>
+
+            <h3>
+                Werkzeuglösungen
+            </h3>
+
+            <p>
+                Für Schreiner, Tischlereien, Möbelbau,
+                Fensterbau und weitere Anwendungen.
+            </p>
+
         </div>
 
     </div>
 
 </section>
 
+
 <section class="about" id="ueber-mich">
+
+    <div class="section-label">
+        Über mich
+    </div>
 
     <div class="about-content">
 
-        <h2 class="section-title">Erfahrung, die aus der Praxis kommt.</h2>
+        <h2 class="section-title">
+            Erfahrung, die aus der Praxis kommt.
+        </h2>
 
-        <p>
-            Ich bin Schreinermeister und staatlich geprüfter Holztechniker
-            und bin in einer Handwerksfamilie groß geworden.
+        <p class="about-text">
+            Ich bin Schreinermeister und staatlich geprüfter
+            Holztechniker und bin in einer Handwerksfamilie
+            groß geworden.
         </p>
 
-        <br>
-
-        <p>
-            Seit über 15 Jahren bin ich im Handwerk zu Hause. Dazu kommen
-            umfangreiche Erfahrungen im Werkzeughandel, im technischen
-            Vertrieb und in der Anwendungstechnik.
+        <p class="about-text">
+            Seit über 15 Jahren bin ich im Handwerk zu Hause.
+            Dazu kommen umfangreiche Erfahrungen im
+            Werkzeughandel, technischen Vertrieb und in der
+            Anwendungstechnik.
         </p>
 
-        <br>
-
-        <p>
-            Mein Anspruch: keine komplizierten Lösungen, sondern Werkzeuge
+        <p class="about-text">
+            Mein Anspruch ist einfach:
+            keine komplizierten Lösungen, sondern Werkzeuge
             und Anwendungen, die in der Praxis funktionieren.
         </p>
 
@@ -291,30 +416,49 @@ footer {
 
 </section>
 
+
 <section class="contact" id="kontakt">
 
-    <h2 class="section-title">Lassen Sie uns sprechen.</h2>
+    <div class="section-label">
+        Kontakt
+    </div>
+
+    <h2 class="section-title">
+        Lassen Sie uns sprechen.
+    </h2>
 
     <p class="intro">
-        Sie suchen eine passende Werkzeuglösung, benötigen technische
-        Beratung oder möchten ein Produkt direkt in Ihrer Anwendung testen?
+        Sie suchen eine passende Werkzeuglösung,
+        benötigen technische Beratung oder möchten
+        ein Produkt direkt in Ihrer Anwendung testen?
     </p>
 
-    <br><br>
-
-    <a class="button" href="mailto:DEINE-EMAIL@DEINE-DOMAIN.DE">
+    <a class="button"
+       href="mailto:info@sb-werkzeugtechnik.de">
         E-Mail schreiben
     </a>
 
 </section>
 
+
 <footer>
 
-    © 2026 SB Werkzeugtechnik ·
-    <a href="#" style="color:#aaa;">Impressum</a> ·
-    <a href="#" style="color:#aaa;">Datenschutz</a>
+    © 2026 SB Werkzeugtechnik
+
+    &nbsp; · &nbsp;
+
+    <a href="#">
+        Impressum
+    </a>
+
+    &nbsp; · &nbsp;
+
+    <a href="#">
+        Datenschutz
+    </a>
 
 </footer>
+
 
 </body>
 </html>
